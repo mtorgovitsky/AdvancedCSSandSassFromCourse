@@ -1,20 +1,3 @@
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
-
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-ORDER: Base + typography > general layout + grid > page layout > components
-
-1em = 16px
-*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -481,15 +464,9 @@ body {
   padding: 10rem 0;
   font-size: 1.4rem;
   color: #f7f7f7; }
-  @media only screen and (max-width: 56.25em) {
-    .footer {
-      padding: 8rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
-      .footer__logo-box {
-        margin-bottom: 6rem; } }
   .footer__logo {
     width: 15rem;
     height: auto; }
@@ -497,10 +474,6 @@ body {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
-    @media only screen and (max-width: 56.25em) {
-      .footer__navigation {
-        width: 100%;
-        text-align: center; } }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -513,7 +486,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .footer__link:hover, .footer__link:active {
     color: #55c57a;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
@@ -523,10 +496,6 @@ body {
     padding-top: 2rem;
     width: 80%;
     float: right; }
-    @media only screen and (max-width: 56.25em) {
-      .footer__copyright {
-        width: 100%;
-        float: none; } }
 
 .row {
   max-width: 114rem;
